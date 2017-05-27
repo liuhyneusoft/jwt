@@ -1,0 +1,6 @@
+# jwt
+demo发起rest请求，demo1接收请求。
+demo首先请求demo1的login接口，post用户名密码，demo1验证通过后生产token返回给demo
+demo请求其他的demo1的接口，在json中加入token，demo1验证token，验证通过执行请求的方法。验证不通过返回error。
+
+这个例子中token中的signature部分只存了username，还可以存其他的比如请求ip。
